@@ -1,0 +1,28 @@
+What is Messaging?
+The term messaging refers to technology that lets computer systems share information without requiring either direct connections or awareness of each other's location. Messaging is also sometimes known as message-oriented middleware, or simply middleware
+
+Messaging is analogous to postal and shipping services. Just as you would hand your letters or packages to a carrier and trust that they will get to where you want them to go, so it is with messaging—your applications hand off information to a messaging system that routes it to whatever other applications you’ve said you want it to get to.
+
+At its most basic, messaging consists of the following:
+
+publisher: the entity that sends or publishes the message (also called a producer
+message: what the publisher wants to say to the subscriber. Messages often contain events, but can also carry queries, commands, and other information.
+subscriber: the ultimate receiver of the message (also called a consumer)
+
+
+A message typically has a destination that decouples the publisher from the subscriber. In PubSub+ event brokers, a destination can be a topic or a queue:
+
+topic: used when the message is intended to be consumed by more than one subscriber
+queue: used when the message is intended to be consumed by at most one subscriber
+Message Quality of Service (QoS)
+Messages can be classified as Persistent (Guaranteed) or Non-Persistent (Direct) by the message producer.
+
+Guaranteed messages are spooled to non-volatile storage on the broker, and are kept until the broker has verified the successful delivery of those messages to all clients and downstream event brokers. Guaranteed messaging is suitable to applications where messages must be:
+
+processed in the order they are received,
+available to consumers, even if those consumers are off-line.
+able to survive the loss of an event broker.
+Direct messages are delivered to subscribing clients in the order in which producers publish them. They are not spooled to non-volatile storage, and do not require acknowledgment. Direct messaging is ideal for applications where:
+
+extremely high message rates and low latency are required
+consuming clients can tolerate message loss in the event of network congestion
