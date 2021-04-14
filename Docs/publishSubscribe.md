@@ -9,7 +9,7 @@ The Topic retains messages as long as it takes to distribute to the present clie
 
 Below is the Architectural diagram of the Publish-Subscribe pattern:
 
-> ![Publish-Subscribe](https://github.com/Deepika-R-Prasad/Guide-On-Solace/blob/feature/new-docs/Docs/pspattern.png)
+> ![Publish-Subscribe](pspattern.png)
 
 ------------------------------------------------------------------------------
 
