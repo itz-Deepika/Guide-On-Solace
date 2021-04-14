@@ -1,6 +1,6 @@
-# Publish - Subscribe Pattern ##
+# Publish - Subscribe Pattern 
 ----------------------------------------------------------------------
-> In Publish Subscribe pattern, only one message is published.
+In Publish Subscribe pattern, only one message is published.
 This message is delivered to all clients through **Topics**.
 Topics act as a bulletin board.
 Publishers and Subscribers are generally anonymous and can dynamically publish or subscribe to the topic. 
