@@ -1,38 +1,26 @@
-Message Exchange Patterns
-Most messaging applications can be reduced to a series of interactions that adhere to one of the following messaging exchange patterns (MEPs):
+# Publish - Subscribe Pattern ##
+----------------------------------------------------------------------
+> In Publish Subscribe pattern, only one message is published.
+This message is delivered to all clients through **Topics**.
+Topics act as a bulletin board.
+Publishers and Subscribers are generally anonymous and can dynamically publish or subscribe to the topic. 
+The Topic is responsible to hold and deliver messages.
+The Topic retains messages as long as it takes to distribute to the present clients.
 
-Publish-Subscribe
-Point-to-Point
-Request-Reply
-Publish-Subscribe
-With publish-subscribe messaging, messages sent by the Producer are processed multiple times by different consumers. Each consumer receives its own copy of the message for processing.
+Below is the Architectural diagram of the Publish-Subscribe pattern:
 
-Publish Subscribe Pattern
+> ![Publish-Subscribe](https://github.com/Deepika-R-Prasad/Guide-On-Solace/blob/feature/new-docs/Docs/pspattern.png)
 
-For more information, see Direct Messages.
+------------------------------------------------------------------------------
 
-Message Replay
-Message Replay allows an event broker to resend messages to new or existing clients that request them, hours or even days after those messages were first received by the event broker.
+Some characteristics are
+- Multiple subscribers for a message.
+- Publisher and subscribe have a timing dependency.
+  - A client that subscribes to a topic can consume only messages published after the client has created a subscription, 
+    the subscriber must continue to be active in order for it to consume messages.
+    
+--------------------------------------------------------------------------------
 
-For more information, see Message Replay Overview.
+For More information refer to [Wikipedia](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern).
 
-Point-to-Point
-With Point-to-Point messaging, messages sent by the Producer are processed by a single Consumer.
-
-
-
-For more information, see Guaranteed Messages.
-
-Non-Exclusive Consumption
-You can extend traditional Point-to-Point messaging by using consumer groups—multiple consumers sharing a single channel or queue. The scale of the overall receiving application is increased by having multiple consumers, but each message is still only delivered to a single endpoint.
-
-
-
-For more information, see Queue Access Types and Durable Endpoint Access Types.
-
-Request-Reply
-With request-reply messaging, applications achieve two-way communication using separate point-to-point channels: one for requests, and another for replies.
-
-Request Reply Pattern
-
-For more information, see Request/Reply with Guaranteed Messages.
+---------------------------------------------------------------------------------
