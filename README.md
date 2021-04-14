@@ -30,9 +30,10 @@ The below points gives Sloace an edge:
 ## Contributors
 
  | Name | BITS Id |
-  ------ ----------
+ | ---- | ------- |
+ | [Deepika Singh](https://github.com/2020MT93088) | 2020MT93088 |
+ | [Deepika R Prasad](https://github.com/Deepika-R-Prasad) | 2020MT93096 |
  | [Deepti](https://github.com/deepti810) | 2020MT93055 |
-
 
 ------------------------------------------
 
