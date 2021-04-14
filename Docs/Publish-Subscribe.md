@@ -1,0 +1,38 @@
+Message Exchange Patterns
+Most messaging applications can be reduced to a series of interactions that adhere to one of the following messaging exchange patterns (MEPs):
+
+Publish-Subscribe
+Point-to-Point
+Request-Reply
+Publish-Subscribe
+With publish-subscribe messaging, messages sent by the Producer are processed multiple times by different consumers. Each consumer receives its own copy of the message for processing.
+
+Publish Subscribe Pattern
+
+For more information, see Direct Messages.
+
+Message Replay
+Message Replay allows an event broker to resend messages to new or existing clients that request them, hours or even days after those messages were first received by the event broker.
+
+For more information, see Message Replay Overview.
+
+Point-to-Point
+With Point-to-Point messaging, messages sent by the Producer are processed by a single Consumer.
+
+
+
+For more information, see Guaranteed Messages.
+
+Non-Exclusive Consumption
+You can extend traditional Point-to-Point messaging by using consumer groups—multiple consumers sharing a single channel or queue. The scale of the overall receiving application is increased by having multiple consumers, but each message is still only delivered to a single endpoint.
+
+
+
+For more information, see Queue Access Types and Durable Endpoint Access Types.
+
+Request-Reply
+With request-reply messaging, applications achieve two-way communication using separate point-to-point channels: one for requests, and another for replies.
+
+Request Reply Pattern
+
+For more information, see Request/Reply with Guaranteed Messages.
