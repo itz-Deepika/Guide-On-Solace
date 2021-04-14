@@ -29,10 +29,10 @@ The below points gives Solace an edge:
 ## Overview
 
 This Project covers the following in detail:
-    1. [Introduction to Solace.](Docs/What is Solace PubSub.md.txt) <br/>
-    2. [Messaging System Overview.](Docs/What is messaging.md.txt) <br/>
-    3. [Different Messaging Patterns.](Docs/Messaging Patterns.md.txt) <br/>
-    4. [Publish Subscribe Pattern.](Docs/Publish-Subscribe.md) <br/>
+    1. [Introduction to Solace.](Docs/solacePubSub.md.txt) <br/>
+    2. [Messaging System Overview.](Docs/messaging.md.txt) <br/>
+    3. [Different Messaging Patterns.](Docs/messagingPatterns.md.txt) <br/>
+    4. [Publish Subscribe Pattern.](Docs/publishSubscribe.md) <br/>
     5. [Configuring Solace.](Docs/configuringSolace.md) <br/>
 
 -----------------------------------------
