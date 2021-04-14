@@ -28,7 +28,7 @@ The below points gives Solace an edge:
 
 ## Overview
 
-This Project covers the following in detail:
+This Project covers the following in detail: <br/>
     1. [Introduction to Solace.](Docs/solacePubSub.md.txt) <br/>
     2. [Messaging System Overview.](Docs/messaging.md.txt) <br/>
     3. [Different Messaging Patterns.](Docs/messagingPatterns.md.txt) <br/>
