@@ -2,10 +2,10 @@
 
 A guide for dummies
 
-This repository is created to give a basic understanding on SOlace 
+This repository is created to give a basic understanding on Solace 
 --The new way of integration.
 
-The below points gives Sloace an edge:
+The below points gives Solace an edge:
 
 - With just one click the event broker can be started.
 - Resilient, High speed PubSub+ Event Broker
@@ -43,5 +43,7 @@ The below points gives Sloace an edge:
 
 ## Resources
 
-
+* Github
+* Spring Docs
+* solace.
 --------------------------------------------
