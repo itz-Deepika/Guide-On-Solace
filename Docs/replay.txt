@@ -1,0 +1,16 @@
+Message Replay is a Solace PubSub+ feature that allows an event broker to resend messages to new or existing clients that request them, hours or even days after those messages were first received by the event broker.
+
+Replay can be performed on a queue or topic endpoint. When initiated, all messages in the replay log, starting at the requested replay start time,
+that match any subscription on the queue or topic endpoint are delivered to the endpoint. Replay can be initiated by event broker commands or client applications. 
+Messages can be replayed from a specific date and time, or as far back as the replay log extends.
+
+A replay can be specified to begin from a specific time, or from the beginning of the message replay log.
+
+You can initiate a replay from all Solace APIs or administratively for non-Solace protocols via Solace CLI, SEMP or Solace PubSub+ Broker Manager.
+
+You can enable and disable Message Replay on a per Message VPN basis.
+You can configure the storage depth of the replay log on a per Message VPN basis.
+The replay log is automatically pruned as it reaches capacity.
+
+Wildcard subscriptions on queues and topic endpoints can be used to select which messages from the replay log should be replayed while still maintaining the original publication order across these many topics.
+Messages are replayed in the original order they would have been sent to the client – even across different topics.
