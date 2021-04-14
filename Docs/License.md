@@ -1,13 +1,13 @@
 
-This Project is developed as a part of Assignment for 
+This Project is developed as a part of Assignment for <br/>
 
-Code: SEZG587
-Course: Open Source Software Engineering
-Sem: 2
-Branch: Software Engineering
-University: BITS - Pilani (WILP)
+Code: SEZG587 <br/>
+Course: Open Source Software Engineering <br/>
+Sem: 2 <br/>
+Branch: Software Engineering <br/>
+University: BITS - Pilani (WILP) <br/>
 
-by:
+by: <br/>
 
  | Name | BITS Id |
  | ---- | ------- |
