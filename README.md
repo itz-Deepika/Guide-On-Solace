@@ -29,6 +29,10 @@ The below points gives Sloace an edge:
 
 ## Contributors
 
+ | Name | BITS Id |
+  ------ ----------
+ | [Deepti](https://github.com/deepti810) | 2020MT93055 |
+
 
 ------------------------------------------
 
