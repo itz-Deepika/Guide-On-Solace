@@ -1,5 +1,7 @@
 # Guide-On-Solace
 
+> ![solace.](Docs/solacelogo.png)
+
 A guide for dummies
 
 This repository is created to give a basic understanding on Solace 
