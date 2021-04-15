@@ -1,6 +1,6 @@
-# Publish - Subscribe Pattern ##
+# Publish - Subscribe Pattern 
 ----------------------------------------------------------------------
-> In Publish Subscribe pattern, only one message is published.
+In Publish Subscribe pattern, only one message is published.
 This message is delivered to all clients through **Topics**.
 Topics act as a bulletin board.
 Publishers and Subscribers are generally anonymous and can dynamically publish or subscribe to the topic. 
@@ -9,7 +9,7 @@ The Topic retains messages as long as it takes to distribute to the present clie
 
 Below is the Architectural diagram of the Publish-Subscribe pattern:
 
-> ![Publish-Subscribe](https://github.com/Deepika-R-Prasad/Guide-On-Solace/blob/feature/new-docs/Docs/pspattern.png)
+> ![Publish-Subscribe](pspattern.png)
 
 ------------------------------------------------------------------------------
 
