@@ -36,3 +36,6 @@ With request-reply messaging, applications achieve two-way communication using s
 Request Reply Pattern
 
 For more information, see Request/Reply with Guaranteed Messages.
+
+A REST consumer can encode any reply in the body of the 200 OK POST response that it returns to the event broker.
+If the originating Solace request message contains a reply-to field then a Solace reply message is generated with the body containing the contents of the 200 OK POST response. 
