@@ -1,8 +1,10 @@
 What is Solace PubSub+ Platform?
+
 A complete event streaming and management platform for the real-time enterprise. The
 PubSub+ Platform helps enterprises design, deploy, and manage event-driven
 architectures (EDAs) across hybrid cloud, multi-cloud, and IoT environments, so they can
 be more integrated and event-driven.
+
 PubSub+ Cloud Console
 The PubSub+ Cloud Console is the "single pane of glass" that gives you access to the
 PubSub+ Platform—a complete event streaming and management platform.
@@ -10,6 +12,7 @@ From one console, you can:
 Deploy and link brokers to form a global, dynamically-routed event mesh
 Monitor event mesh performance
 Define, manage, and govern events
+
 Event Streaming
 PubSub+ Mission Control gives you access to event broker services that give you all the
 messaging features you need, while Solace takes care of deploying and operating your
@@ -18,12 +21,16 @@ building applications and your EDA. In addition to this, you can manage your eve
 services whether they are located in the cloud or on-premises, easily visualize and design
 event meshes , securely centralize the management of your EDA, and easily scale to
 drive your EDA forward.
+
 Event Insights
 With PubSub+ Insights , we do the work to provide curated dashboards, easy-tounderstand
 visualizations based on historical and real-time metrics, and timely
 notifications about your event broker services. Advanced monitoring helps you to better
 manage your services as your EDA scales, and an integrated email framework alerts you
 when key metrics fall outside of your established thresholds.
+
 Event Management
+
 Provide feedback
+
 Products Company Developers Support Contact Us Search the docs

@@ -1,0 +1,2 @@
+Message VPNs allow for many separate applications to share a single Solace PubSub+ event broker while still remaining independent and separated.
+They enable the virtualization of an event broker into many individual virtual event brokers.
