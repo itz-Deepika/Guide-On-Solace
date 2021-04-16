@@ -9,3 +9,41 @@ Some common reasons why builds might hang:
 Waiting for keyboard input or other kind of human interaction
 Concurrency issues (deadlocks, livelocks and so on)
 Installation of native extensions that take very long time to compile
+
+Limiting concurrent jobs
+
+The maximum number of concurrent jobs depends on the total system load, but one situation in which you might want to set a particular limit is:
+
+if your build depends on an external resource and might run into a race condition with concurrent jobs.
+
+Or using the command line client:
+
+$ travis settings maximum_number_of_builds --set 1
+
+Building Only the Latest Commit
+If you are only interested in building the most recent commit on each branch you can use this new feature to automatically cancel older builds in the queue that are not yet running. Existing builds will be allowed to finish.
+
+Skipping a Build
+If you don’t want to run a build for a particular commit for any reason, you may instruct Travis CI to skip building this commit via a command in the commit message.
+The command should be one of the following forms:
+
+[<KEYWORD> skip]
+
+Building Specific Branches
+Travis CI uses the .travis.yml file from the branch containing the Git commit that triggers the build. Include branches using a safelist, or exclude them using a blocklist.
+
+Safelisting or Blocklisting Branches
+Specify which branches to build using a safelist, or blocklist branches that you do not want to be built:
+
+# blocklist
+branches:
+  except:
+  - legacy
+  - experimental
+
+# safelist
+branches:
+  only:
+  - master
+  - stable
+
