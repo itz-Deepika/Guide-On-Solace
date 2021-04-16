@@ -1,0 +1,24 @@
+Using a Docker image from the repository in a build
+
+This example repository runs two Docker containers built from the same image:
+
+1. a Sinatra application
+2. the Sinatra application test suite
+After specifying in the .travis.yml to use Docker (with services: - docker) and Ruby (with language: ruby) , 
+the before_install build step pulls a Docker image from carlad/sinatra then runs in a container built from that image after mapping some ports and paths.
+
+The complete setting for the travis.yml file is:
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+- docker pull carlad/sinatra
+- docker run -d -p 127.0.0.1:80:4567 carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec foreman start;"
+- docker ps -a
+- docker run carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec rake test"
+
+script:
+- bundle exec rake test
